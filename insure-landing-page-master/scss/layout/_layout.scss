@@ -1,0 +1,34 @@
+.container {
+    max-width: $desktop;
+    padding: 0 1.5rem;
+    margin: auto;
+
+    &--nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+
+    &--banner {
+        z-index: 1;
+        position: relative;
+        padding: 0;
+
+        @media screen and (min-width: $tablet) {
+            padding: 0 1.5rem;
+            display: flex;
+        }
+    }
+
+    &--footer {
+        display: grid;
+        position: relative;
+        z-index: 1;
+
+        @media screen and (min-width: $tablet) {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+}
+
